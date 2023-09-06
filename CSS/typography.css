@@ -1,0 +1,191 @@
+@font-face {
+  font-family: Courgette;
+  src: url("./fonts/Courgette/Courgette-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Niramit;
+  src: url("./fonts/Niramit/Niramit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Niramit;
+  src: url("./fonts/Niramit/Niramit-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Niramit;
+  src: url("./fonts/Niramit/Niramit-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Niramit;
+  src: url("./fonts/Niramit/Niramit-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.font-1-xs {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.font-1-up-xs {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.font-1-s {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.font-1-up-s {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.font-1-m {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 0.03;
+}
+.font-1-up-m {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 0.03;
+  text-transform: uppercase;
+}
+.font-1-l {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.05;
+}
+.font-1-up-l {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.05;
+  text-transform: uppercase;
+}
+.font-1-xl {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.05;
+}
+
+.font-1-up-xl {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.05;
+  text-transform: uppercase;
+}
+.font-2-xs {
+  font-family: Courgette;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.33;
+}
+.font-2-up-xs {
+  font-family: Courgette;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+.font-2-s {
+  font-family: Courgette;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.font-2-up-s {
+  font-family: Courgette;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.font-2-m {
+  font-family: Courgette;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.font-2-up-m {
+  font-family: Courgette;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.font-2-l {
+  font-family: Courgette;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.22;
+  letter-spacing: 0.05;
+}
+.font-2-up-l {
+  font-family: Courgette;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.22;
+  letter-spacing: 0.05;
+  text-transform: uppercase;
+}
+.font-2-xl {
+  font-family: Courgette;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.05;
+}
+.font-2-up-xl {
+  font-family: Courgette;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.05;
+  text-transform: uppercase;
+}
