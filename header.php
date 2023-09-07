@@ -56,9 +56,4 @@ $cart_count = WC()->cart->get_cart_contents_count();
 
   </nav>
 </section>
-
-
-
-
-
 </header>
