@@ -3,6 +3,9 @@
   position: absolute;
   z-index: 3000;
 }
+[data-menu="list"].active .header__cat-btn {
+  background-color: var(--rx-01);
+}
 [data-menu="list"]:hover .header__categories,
 [data-menu="list"].active .header__categories {
   display: flex;

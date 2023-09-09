@@ -31,6 +31,9 @@ header {
   position: relative;
   display: flex;
 }
+.header__cat-btn:hover {
+  background-color: var(--rx-01);
+}
 
 .mobile-cat {
   display: none;

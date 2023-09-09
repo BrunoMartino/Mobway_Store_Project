@@ -17,3 +17,7 @@ Template name: Mobway
 
 /*footer*/
 @import "./CSS/footer.css";
+
+/*Home*/
+@import "./CSS/slide-home.css";
+@import "./CSS/parent-cat.css";
