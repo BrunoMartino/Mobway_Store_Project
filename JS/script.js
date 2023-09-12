@@ -1,8 +1,8 @@
 import MenuMobile from "./modules/menu-mobile.js";
 import SlideNav from "./modules/slide.js";
+import RegressiveTimer from "./modules/regressive-timer.js";
 
 const menuBtnMobile = document.querySelector(".header__cat-btn");
-console.log(menuBtnMobile);
 menuBtnMobile.addEventListener("click", (event) => {
   event.preventDefault();
 });
@@ -19,4 +19,11 @@ if (slideExist) {
   const slide = new SlideNav(".slide", ".slide-wrapper");
   slide.init();
   slide.addControl();
+}
+const cronoExist = document.querySelector('[data-home="crono"]');
+if (cronoExist) {
+  const timer = new RegressiveTimer(
+    ".crono-gallery .product__list .product__list-item"
+  );
+  timer.init();
 }

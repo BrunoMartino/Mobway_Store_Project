@@ -3,7 +3,7 @@
 include get_template_directory() . '/functions_inc/setupTheme.php';
 include get_template_directory() . '/functions_inc/customImgs.php';
 include get_template_directory() . '/functions_inc/customCat.php';
-
+include get_template_directory() . '/functions_inc/formatProducts.php';
 
 
 

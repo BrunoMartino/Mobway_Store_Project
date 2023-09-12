@@ -23,4 +23,10 @@ function remove_some_body_class($classes) {
   return $classes;
 }
 add_filter('body_class', 'remove_some_body_class');
+
+// controls product display on category pages
+function mobway_loop_per_page() {
+  return 8;
+}
+add_filter('loop_shop_per_page', 'mobway_loop_per_page')
 ?>

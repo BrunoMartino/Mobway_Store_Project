@@ -14,3 +14,118 @@
   display: none;
   width: 0;
 }
+/* controls product-box on home page and search, category and store page */
+
+.product__list {
+  display: flex;
+  padding: 3rem 1.5rem 3.75rem 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__list-item {
+  border: 4px solid var(--az-01);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 2rem 0;
+  transition: 0.5s;
+}
+.disabled:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 400;
+}
+
+.product__list-img img {
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.product__list-item h2 {
+  margin: 0.5rem auto;
+  max-width: 15ch;
+  text-transform: capitalize;
+}
+.product__list-info {
+  display: flex;
+  padding: 0 1rem 1.25rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.reg-price {
+  text-decoration: line-through;
+}
+.sell-price {
+  font-size: 1.25rem;
+}
+.product__list-btn {
+  font-size: 1.25rem;
+  background-color: var(--az-01);
+  color: var(--az-05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.75rem;
+}
+.product__list-benefits {
+  display: none;
+  position: absolute;
+  top: 1.25rem;
+  left: 0;
+}
+.product__list-benefits p {
+  padding: 0.25rem 0.75rem;
+  background-color: var(--rx-01);
+  max-width: max-content;
+  border-radius: 0px 12px 12px 0px;
+  display: flex;
+  align-items: center;
+}
+.product__list-item:hover {
+  border: 4px solid var(--rs-03);
+}
+.product__list-item:hover .product__list-btn {
+  background: var(--rx-01);
+  color: var(--rx-05);
+}
+.product__list-item:hover .product__list-benefits {
+  display: block;
+  animation: showUp 0.8s;
+}
+.product__list-secure::before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background: url("../mobway-imgs/icons/safe.svg") center center no-repeat;
+  margin-right: 0.5rem;
+}
+.product__list-free-ship::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1rem;
+  background: url("../mobway-imgs/icons/shipping.svg") center center no-repeat;
+  margin-right: 0.5rem;
+}
+.product__list-credit::before {
+  content: "";
+  display: block;
+  width: 1.25rem;
+  height: 1rem;
+  background: url("../mobway-imgs/icons/card.svg") center center no-repeat;
+  margin-right: 0.5rem;
+}
+@keyframes showUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

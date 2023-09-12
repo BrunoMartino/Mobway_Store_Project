@@ -7,7 +7,7 @@
   width: 100vw;
   height: 0.25rem;
   background-color: var(--cz-01);
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 .parent-categories::after {
   content: "";
@@ -37,12 +37,15 @@
   border-radius: 50%;
   border: 0.25rem solid var(--rs-01);
   margin: 0 auto;
+  transform: scale(0.9);
+  transition: 0.3s;
 }
 .parent-categories__item p {
   padding: 0 auto;
   text-align: center;
   color: var(--cz-08);
   transform: scale(0.9);
+  transition: 0.3s;
 }
 .parent-categories__item p::before {
   content: "";

@@ -9,7 +9,7 @@ function get_is_product_category_data($category) {
     'name' => $cat-> name,
     'id' => $cat_id,
     'link' => get_term_link($cat_id, 'product_cat'),
-    'img' => wp_get_attachment_image_src($img_id, 'thumbnail')[0]
+    'img' => wp_get_attachment_image_src($img_id, 'parent-cat')[0]
   ];
 }
 ?>
