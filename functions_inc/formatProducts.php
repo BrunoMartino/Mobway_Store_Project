@@ -26,6 +26,8 @@ return $products_final;
 <?php 
 function mobway_product_list($products) { ?>
   <ul class='product__list'>
+    <div class='prev-btn'><p>Prev</p></div>
+    <div class='next-btn'><p>next</p></div>
 <?php foreach($products as $product) { ?>
   <li class='product__list-item'>
     <div class='product__list-benefits'>

@@ -1,6 +1,7 @@
 import MenuMobile from "./modules/menu-mobile.js";
 import SlideNav from "./modules/slide.js";
 import RegressiveTimer from "./modules/regressive-timer.js";
+import InfiniteCarousel from "./modules/infinite-carousel.js";
 
 const menuBtnMobile = document.querySelector(".header__cat-btn");
 menuBtnMobile.addEventListener("click", (event) => {
@@ -27,3 +28,9 @@ if (cronoExist) {
   );
   timer.init();
 }
+const newestProduct = new InfiniteCarousel(
+  ".newest-gallery .product__list .prev-btn",
+  ".newest-gallery .product__list .next-btn",
+  ".newest-gallery .product__list .product__list-item"
+);
+newestProduct.init();
