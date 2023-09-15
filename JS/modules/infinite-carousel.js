@@ -1,50 +1,49 @@
 export default class InfiniteCarousel {
-  constructor(prev, next, slide) {
-    this.prev = document.querySelector(prev);
-    this.next = document.querySelector(next);
-    this.slide = Array.from(document.querySelectorAll(slide));
+  constructor(controls, slides) {
+    this.controls = document.querySelectorAll(controls);
+    this.slides = Array.from(document.querySelectorAll(slides));
 
-    this.currentSlide = 0;
-    this.maxItems = this.slide.length;
+    this.currentItem = 0;
+    this.maxItems = this.slides.length;
+    this.screenWidth = window.innerWidth;
 
-    this.toLeft = this.toLeft.bind(this);
-    this.toRight = this.toRight.bind(this);
+    this.moveSlide = this.moveSlide.bind(this);
   }
 
-  toLeft() {
-    this.currentSlide--;
-    if (this.currentSlide < 0) {
-      this.currentSlide = this.maxItems - 3;
-    }
-    this.scrollSlide();
-  }
-
-  toRight() {
-    this.currentSlide++;
-    if (this.currentSlide >= this.maxItems - 2) {
-      this.currentSlide = 0;
-    }
-    this.scrollSlide();
-  }
-
-  scrollSlide() {
-    const item = this.slide[0];
-    const computedStyles = getComputedStyle(item);
-    const offset =
-      -(item.offsetWidth - parseFloat(computedStyles.marginLeft)) *
-      this.currentSlide;
-    this.slide.forEach((element) => {
-      element.classList.remove("selected");
-      element.style.transform = `translate3d(${offset}px, 0, 0)`;
+  callNextSlide() {
+    this.slides.forEach((item) => {
+      item.classList.remove("selected");
     });
-
-    this.slide[this.currentSlide].classList.add("selected");
-    this.slide[this.currentSlide + 1].classList.add("selected");
+    this.slides[this.currentItem].scrollIntoView({
+      behavior: "smooth",
+      inline: "start",
+      block: "nearest",
+    });
+    this.slides[this.currentItem].classList.add("selected");
   }
 
   createEvents() {
-    this.prev.addEventListener("click", this.toLeft);
-    this.next.addEventListener("click", this.toRight);
+    this.controls.forEach((control) => {
+      control.addEventListener("click", this.moveSlide);
+    });
+    this.slides[0].classList.add("selected");
+  }
+
+  moveSlide(e) {
+    const isPrev = e.target.classList.contains("prev-btn");
+
+    if (isPrev) {
+      this.currentItem--;
+    } else {
+      this.currentItem++;
+    }
+    if (this.currentItem >= this.maxItems) {
+      this.currentItem = 0;
+    }
+    if (this.currentItem < 0) {
+      this.currentItem = this.maxItems - 1;
+    }
+    this.callNextSlide();
   }
   init() {
     this.createEvents();

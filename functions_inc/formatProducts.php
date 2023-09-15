@@ -24,12 +24,15 @@ return $products_final;
 ?>
 
 <?php 
-function mobway_product_list($products) { ?>
+
+function mobway_product_list($products) {
+  $icon_url = get_template_directory_uri() . '/mobway-imgs/icons'; ?>
+    <button data-product='control' class='prev-btn'><img src="<?= $icon_url . '/arrow-left.svg';?>" alt="prev"></button>
+    <button data-product='control' class='next-btn'><img src="<?= $icon_url . '/arrow-right.svg';?>" alt="next"></button>
+  <nav class='product__nav'>
   <ul class='product__list'>
-    <div class='prev-btn'><p>Prev</p></div>
-    <div class='next-btn'><p>next</p></div>
 <?php foreach($products as $product) { ?>
-  <li class='product__list-item'>
+  <li data-product='item' class='product__list-item'>
     <div class='product__list-benefits'>
     <p class='product__list-secure font-1-up-s rx-05'>Dados Seguros </p>
       <p class='product__list-free-ship font-1-up-s rx-05'>Frete Gratuito </p>
@@ -51,4 +54,5 @@ function mobway_product_list($products) { ?>
   </li>
   <?php } ?>
   </ul>
+  </nav>
   <?php } ?>

@@ -62,16 +62,16 @@ if(have_posts()){while(have_posts()){the_post();?>
 </section>
 <?php if($data['cronometer']) { ?>
 <section class='container crono-gallery' data-home='crono'>
-<h1 class='font-2-up-xl'>Por tempo Limitado</h1>
+<h1 class='font-2-up-l az-05'>Por tempo Limitado</h1>
 <?php mobway_product_list($data['cronometer']) ?>
 </section>
 <?php } ?>
 <section class='container newest-gallery'>
-<h1 class='font-2-up-xl'>Lançamentos</h1>
+<h1 class='font-2-up-l rs-05'>Lançamentos</h1>
 <?php mobway_product_list($data['newest']) ?>
 </section>
 <section class='container most-sales-gallery'>
-<h1 class='font-2-up-xl'>Mais Vendidos</h1>
+<h1 class='font-2-up-l rx-05'>Mais Vendidos</h1>
 <?php mobway_product_list($data['most_sales']) ?>
 </section>
 

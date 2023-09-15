@@ -29,8 +29,17 @@ if (cronoExist) {
   timer.init();
 }
 const newestProduct = new InfiniteCarousel(
-  ".newest-gallery .product__list .prev-btn",
-  ".newest-gallery .product__list .next-btn",
-  ".newest-gallery .product__list .product__list-item"
+  '.newest-gallery [data-product="control"]',
+  '.newest-gallery .product__list [data-product="item"]'
 );
 newestProduct.init();
+const mostSalesProduct = new InfiniteCarousel(
+  '.most-sales-gallery [data-product="control"]',
+  '.most-sales-gallery .product__list [data-product="item"]'
+);
+mostSalesProduct.init();
+const cronoProduct = new InfiniteCarousel(
+  '.crono-gallery [data-product="control"]',
+  '.crono-gallery .product__list [data-product="item"]'
+);
+cronoProduct.init();

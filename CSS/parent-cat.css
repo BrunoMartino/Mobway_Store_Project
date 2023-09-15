@@ -1,5 +1,6 @@
 .parent-categories {
   padding: 1rem 2rem;
+  margin-bottom: 3rem;
 }
 .parent-categories::before {
   content: "";
@@ -69,6 +70,12 @@
   .parent-categories__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .parent-categories__item img {
+    max-width: 4rem;
+  }
+  .parent-categories__item p {
+    font-size: 1rem;
   }
 }
 @media (max-width: 600px) {

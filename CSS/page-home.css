@@ -1,7 +1,8 @@
 .crono-gallery,
 .newest-gallery,
 .most-sales-gallery {
-  padding: 2rem 0;
+  position: relative;
+  margin-bottom: 4rem;
 }
 .newest-gallery {
   background-color: var(--cz-01);
@@ -9,9 +10,23 @@
 .crono-gallery h1,
 .newest-gallery h1,
 .most-sales-gallery h1 {
-  padding: 0 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.crono-gallery h1 {
+  background-color: var(--az-01);
+}
+.newest-gallery h1 {
+  background-color: var(--rs-01);
+}
+.most-sales-gallery h1 {
+  background-color: var(--rx-01);
 }
 
+.crono-gallery .prev-btn,
+.crono-gallery .next-btn {
+  display: none;
+}
 .item-timer {
   padding: 0.5rem 2rem;
   position: absolute;
@@ -47,6 +62,11 @@
     justify-content: center;
     align-items: center;
   }
+  .crono-gallery .prev-btn,
+  .crono-gallery .next-btn {
+    display: block;
+  }
+
   .crono-gallery .product__list,
   .newest-gallery .product__list,
   .most-sales-gallery .product__list {
@@ -62,14 +82,15 @@
   .newest-gallery .product__list,
   .most-sales-gallery .product__list {
     padding-top: 1rem;
-    justify-content: center;
   }
   .crono-gallery .product__list .product__list-item:first-child {
     margin-top: 1.5rem;
   }
+  .crono-gallery h1 {
+    font-size: 1.75rem;
+  }
 }
 @media (max-width: 400px) {
-  .crono-gallery h1,
   .newest-gallery h1,
   .most-sales-gallery h1 {
     font-size: 2rem;
