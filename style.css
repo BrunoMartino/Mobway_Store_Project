@@ -22,3 +22,6 @@ Template name: Mobway
 @import "./CSS/slide-home.css";
 @import "./CSS/parent-cat.css";
 @import "./CSS/page-home.css";
+
+/*categories page*/
+@import "./CSS/product-archive.css";

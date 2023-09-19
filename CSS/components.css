@@ -47,14 +47,26 @@
   border: none;
   cursor: pointer;
 }
+.prev-btn img {
+  margin: 0 0 0 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--rx-01);
+}
+.next-btn img {
+  margin: 0 1.5rem 0 0;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--rx-01);
+}
 .prev-btn {
   left: 0;
-  background: linear-gradient(to left, transparent 0%, var(--rx-02) 200%);
+  background: linear-gradient(to left, transparent 0%, white 200%);
   opacity: 0;
 }
 .next-btn {
   right: 0;
-  background: linear-gradient(to right, transparent 0%, var(--rx-02) 200%);
+  background: linear-gradient(to right, transparent 0%, white 200%);
   opacity: 0;
 }
 .prev-btn:hover,

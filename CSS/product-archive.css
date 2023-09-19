@@ -1,0 +1,289 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.breadcrumb p {
+  text-align: end;
+}
+.breadcrumb button {
+  background-color: var(--az-01);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.breadcrumb button p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumb button p::after {
+  display: block;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background: url("../mobway-imgs/icons/filter-left.svg") center center
+    no-repeat;
+  margin-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+.woocommerce-breadcrumb {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--cz-06);
+}
+.woocommerce-breadcrumb a {
+  color: var(--cz-04);
+}
+
+.product__categories {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product__categories main .product__list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 1.75rem;
+}
+.product__categories main button {
+  display: none;
+}
+.filters {
+  height: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.filter {
+  background-color: var(--cz-01);
+  border-radius: 0.5rem;
+  max-width: 15rem;
+}
+.filter h2 {
+  text-align: center;
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--cz-08);
+  background-color: var(--cz-02);
+  padding: 1rem 0.75rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+}
+#menu-filter-categories {
+  padding: 0 1.5rem;
+  padding-bottom: 1rem;
+}
+#menu-filter-categories li a {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.03;
+  text-transform: uppercase;
+  color: var(--cz-10);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+}
+#menu-filter-categories li a:before {
+  display: block;
+  content: "";
+  width: 0.25rem;
+  height: 1rem;
+  background-color: var(--rx-03);
+  margin-right: 0.5rem;
+}
+#menu-filter-categories .sub-menu li a {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+#menu-filter-categories .sub-menu li a::before {
+  display: block;
+  content: "";
+  width: 1rem;
+  height: 0.25rem;
+  background-color: var(--rx-03);
+  margin-right: 0.5rem;
+}
+.woocommerce .woocommerce-widget-layered-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  padding: 0 1.5rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+.woocommerce
+  .woocommerce-widget-layered-nav-list
+  .woocommerce-widget-layered-nav-list__item
+  span {
+  display: none;
+}
+.woocommerce
+  .woocommerce-widget-layered-nav-list
+  .woocommerce-widget-layered-nav-list__item
+  a {
+  display: flex;
+  align-items: center;
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.03;
+  text-transform: uppercase;
+}
+.woocommerce
+  .woocommerce-widget-layered-nav-list
+  .woocommerce-widget-layered-nav-list__item
+  a::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--rx-06);
+  background: transparent;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+.woocommerce
+  .woocommerce-widget-layered-nav-list
+  .woocommerce-widget-layered-nav-list__item--chosen
+  a:before {
+  background: var(--rx-03);
+}
+.filter__price {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  padding-bottom: 1rem;
+}
+.filter__price div {
+  display: flex;
+  align-items: center;
+}
+.filter__price label {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.03;
+  text-transform: uppercase;
+}
+.filter__price label span {
+  font-size: 1rem;
+}
+.filter__price input {
+  margin-left: 0.5rem;
+  max-width: 5rem;
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.03;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border: 2px solid var(--rx-06);
+  border-radius: 0.25rem;
+  color: var(--cz-09);
+}
+.filter__price button {
+  align-self: center;
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.03;
+  text-transform: uppercase;
+  color: var(--az-06);
+  border: none;
+  background-color: var(--az-01);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.pagination {
+  display: flex;
+  justify-content: end;
+  padding-right: 2rem;
+}
+.page-numbers.next {
+  display: none;
+}
+.page-numbers {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.03;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  padding-top: 0.25rem;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: var(--cz-02);
+}
+.page-numbers.current {
+  background-color: var(--rs-01);
+}
+@media (max-width: 630px) {
+  .filters {
+    display: none;
+  }
+  .filters.active {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 19.75rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 5.75rem;
+    width: 100%;
+    height: max-content;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 600;
+  }
+  .filter-mobile {
+    z-index: 700;
+  }
+  .breadcrumb {
+    justify-content: space-around;
+  }
+  .product__categories main .product__list {
+    justify-content: center;
+    gap: 0;
+  }
+}
+@media (max-width: 530px) {
+  .filters.active {
+    top: 18.5rem;
+    padding-left: 4.5rem;
+  }
+}
+@media (max-width: 420px) {
+  .filters.active {
+    top: 18.25rem;
+    padding-left: 2.75rem;
+  }
+}
+@media (max-width: 350px) {
+  .filters.active {
+    top: 19.55rem;
+    padding-left: 1.75rem;
+  }
+}

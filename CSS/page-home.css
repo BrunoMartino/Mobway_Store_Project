@@ -1,9 +1,14 @@
 .crono-gallery,
 .newest-gallery,
 .most-sales-gallery {
-  position: relative;
   margin-bottom: 4rem;
 }
+.crono-gallery .container,
+.newest-gallery .container,
+.most-sales-gallery .container {
+  position: relative;
+}
+
 .newest-gallery {
   background-color: var(--cz-01);
 }
