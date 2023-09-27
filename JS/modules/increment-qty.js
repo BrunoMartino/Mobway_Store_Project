@@ -4,9 +4,9 @@ export default class IncrementQty {
   }
 
   createSpanBtn() {
-    this.decreaseBtn = document.createElement("span");
+    this.decreaseBtn = document.createElement("div");
     this.decreaseBtn.classList.add("decrease-btn");
-    this.increaseBtn = document.createElement("span");
+    this.increaseBtn = document.createElement("div");
     this.increaseBtn.classList.add("increase-btn");
     // styles, icons e images are setted on CSS.
 

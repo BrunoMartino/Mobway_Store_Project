@@ -13,12 +13,12 @@ if(have_posts()){
 ?>    
 <div class='product__gallery' data-gallery='gallery'>
 <div class="product__gallery-list">
-<div class='prev-btn'><img src="<?= $icon_url . '/arrow-left.svg'?>" alt="prev"></div>
-<div class='next-btn'><img src="<?= $icon_url . '/arrow-right.svg'?>" alt="next"></div>
+<div data-product="control" class='prev-btn'><img src="<?= $icon_url . '/arrow-left.svg'?>" alt="prev"></div>
+<div data-product="control" class='next-btn'><img src="<?= $icon_url . '/arrow-right.svg'?>" alt="next"></div>
 <ul class='product__gallery-slide'>
 <?php foreach($product_data['gallery'] as $img) { ?>
 <li class='product__gallery-img'>
-  <img src="<?= $img; ?>" alt="<?= $product_data['name']; ?>" loading='lazy'>
+  <img data-gallery='gallery-imgs' src="<?= $img; ?>" alt="<?= $product_data['name']; ?>" loading='lazy'>
 </li>
 <?php } ?>
 </ul>  

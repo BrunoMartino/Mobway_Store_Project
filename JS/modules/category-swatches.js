@@ -4,14 +4,12 @@ export default class Cat_Swachtes {
     this.variationSelect = Array.from(
       document.querySelectorAll(variationSelect)
     );
-    console.log(this.attrUL);
   }
 
   createVariationsArray() {
     this.variationSelect.forEach((element) => {
       const selectID = element.id;
       let variationArray = Array.from(element.children);
-      console.log(variationArray);
       variationArray.shift();
 
       const attrElements = this.attrUL.filter((attrElement) =>
@@ -19,11 +17,9 @@ export default class Cat_Swachtes {
       );
       attrElements.forEach((attrElement) => {
         let attrArray = Array.from(attrElement.children);
-        console.log(attrElement);
         this.setVariationsSelected(attrArray, element, variationArray);
       });
       this.addChangeEvents(element);
-      console.log(element);
     });
   }
 
