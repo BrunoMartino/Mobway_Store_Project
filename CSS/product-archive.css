@@ -43,13 +43,14 @@
 
 .product__categories {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  overflow-y: hidden;
 }
 
 .product__categories main .product__list {
   display: flex;
   flex-flow: row wrap;
-  margin-left: 1.75rem;
+  margin-left: 1rem;
 }
 .product__categories main button {
   display: none;
@@ -61,7 +62,7 @@
 .filter {
   background-color: var(--cz-01);
   border-radius: 0.5rem;
-  max-width: 15rem;
+  width: 15.5rem;
 }
 .filter h2 {
   text-align: center;

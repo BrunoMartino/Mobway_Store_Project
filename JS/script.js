@@ -2,6 +2,9 @@ import MenuMobile from "./modules/menu-mobile.js";
 import SlideNav from "./modules/slide.js";
 import RegressiveTimer from "./modules/regressive-timer.js";
 import InfiniteCarousel from "./modules/infinite-carousel.js";
+import Cat_Swachtes from "./modules/category-swatches.js";
+import Img_Swachtes from "./modules/image-swatches.js";
+import IncrementQty from "./modules/increment-qty.js";
 
 const menuBtnMobile = document.querySelector(".header__cat-btn");
 menuBtnMobile.addEventListener("click", (event) => {
@@ -58,4 +61,23 @@ if (filter) {
     "#menu-filter-categories menu-item .sub-menu"
   );
   filterMobile.init();
+}
+
+const infoproduct = document.querySelector(".product__info");
+if (infoproduct) {
+  const idImage = "#pa_image";
+  const selectImgExist = document.querySelector(idImage);
+
+  if (selectImgExist) {
+    const swatchesImg = new Img_Swachtes('[data-cat="imgs"]', idImage);
+    swatchesImg.init();
+  }
+  const swatches = new Cat_Swachtes(
+    '[data-cat="attributes"]',
+    ".variations select"
+  );
+  swatches.init();
+
+  const qtyValues = new IncrementQty(".qty");
+  qtyValues.init();
 }

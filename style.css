@@ -25,3 +25,6 @@ Template name: Mobway
 
 /*categories page*/
 @import "./CSS/product-archive.css";
+
+/*product page*/
+@import "./CSS/single-product.css";

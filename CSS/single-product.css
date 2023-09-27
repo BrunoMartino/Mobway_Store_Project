@@ -1,0 +1,291 @@
+.single__product-breadcrumb {
+  display: flex;
+  justify-content: end;
+  margin: 2rem 1rem;
+}
+.product__main {
+  display: flex;
+  justify-content: center;
+  gap: 2.25rem;
+  margin-bottom: 5rem;
+}
+[data-cat="imgs-box"] {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+.single_add_to_cart_button::before {
+  display: none;
+}
+.product__gallery {
+  max-width: 37.5rem;
+  display: flex;
+  flex-flow: nowrap column-reverse;
+}
+.product__gallery-list {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  cursor: pointer;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  position: relative;
+}
+.product__gallery-list::-webkit-scrollbar {
+  display: none;
+}
+
+.product__gallery-slide {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.product__gallery-img {
+  width: 7.5rem;
+  height: 7.5rem;
+  flex-shrink: 0;
+  transform: scale(0.9);
+  opacity: 0.8;
+  border: 2px solid var(--cz-02);
+}
+.product__gallery-list .prev-btn,
+.product__gallery-list .next-btn {
+  width: 2.5rem;
+  height: 100%;
+  top: 0;
+  opacity: 1;
+  background-color: none;
+  cursor: pointer;
+  padding-top: 3.5rem;
+}
+.product__gallery-main img {
+  border-radius: 1.5rem;
+  border: 4px solid var(--rs-02);
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+.product__info {
+  max-width: 22.5rem;
+}
+.product__info small {
+  margin-bottom: 0.5rem;
+}
+.product__info h1 {
+  max-width: 20ch;
+  margin-bottom: 0.5rem;
+}
+.product__info-price p:first-child {
+  margin-bottom: 0.5rem;
+}
+.product__info-price p:last-child {
+  text-decoration: line-through;
+  margin-bottom: 3.25rem;
+}
+.product__info-varations ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.25rem;
+}
+.cat-list__img li {
+  border: 2px solid var(--cz-02);
+  opacity: 0.85;
+  border-radius: 0.25rem;
+  transform: scale(0.9);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.cat__list-title {
+  margin-bottom: 1rem;
+  text-align: center;
+  background-color: var(--cz-02);
+  color: var(--cz-08);
+  padding: 0.5rem 0;
+}
+.cat-variation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--cz-03);
+  border-radius: 0.25rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  cursor: pointer;
+}
+
+.cat-variation p {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.qty {
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  width: 3rem;
+  border: 2px solid var(--cz-03);
+}
+.btn-flexbox {
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  gap: 0.5rem;
+}
+.woocommerce-variation-add-to-cart button.single_add_to_cart_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Niramit, Arial, sans-serif, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.03;
+  text-transform: uppercase;
+  background-color: var(--rs-02);
+  color: var(--rs-05);
+  border: none;
+  border-radius: 0.8rem;
+  width: 13rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+.single_add_to_cart_button::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background: url("../mobway-imgs/icons/buy-add-detail.svg") center center
+    no-repeat;
+  margin-left: 1rem;
+}
+.shipping,
+.credit {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.shipping::before {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 1rem;
+  background: url("../mobway-imgs/icons/shipping.svg") center center no-repeat;
+  margin-right: 0.25rem;
+  margin-left: 0.125rem;
+}
+.credit::before {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 1rem;
+  background: url("../mobway-imgs/icons/card.svg") center center no-repeat;
+  margin-right: 0.25rem;
+}
+.product__description {
+  margin: 0 2rem 3rem 2rem;
+}
+.products__related {
+  position: relative;
+}
+.products__related h2 {
+  margin-left: 2rem;
+}
+.products__related .product__list {
+  padding: 1rem 2rem;
+}
+.products__related .product__list .product__list-item {
+  margin: 1rem 0;
+}
+.products__related .prev-btn,
+.products__related .next-btn {
+  display: none;
+}
+@media (max-width: 960px) {
+  .product__main {
+    flex-flow: column;
+    margin: 0 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .product__info {
+    max-width: 41.25rem;
+  }
+  .product__info h1 {
+    max-width: 100%;
+  }
+  .woocommerce-variation-add-to-cart {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .btn-flexbox {
+    justify-content: center;
+  }
+}
+@media (max-width: 660px) {
+  .product__info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .product__info h1 {
+    font-size: 2rem;
+  }
+  .products__related .prev-btn,
+  .products__related .next-btn {
+    display: block;
+  }
+  .woocommerce-variation-add-to-cart {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media (max-width: 420px) {
+  .product__gallery-img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .product__gallery-list .prev-btn,
+  .product__gallery-list .next-btn {
+    width: 1.75rem;
+    padding-top: 2.5rem;
+  }
+  .product__info h1 {
+    font-size: 1.75rem;
+    max-width: 100%;
+  }
+  .product__info-price p:first-child {
+    font-size: 1.125rem;
+  }
+  .products__related h2:first-child {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 380px) {
+  .btn-flexbox {
+    flex-flow: column-reverse;
+    align-items: start;
+  }
+  .btn-flexbox div:nth-child(2) {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .woocommerce-variation-add-to-cart {
+    flex-direction: column;
+  }
+}
