@@ -1,0 +1,105 @@
+@media (max-width: 960px) {
+  .woocommerce-MyAccount-content {
+    padding: 0 2.25rem;
+  }
+}
+@media (max-width: 760px) {
+  #customer_login {
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+  .product-thumbnail {
+    display: block !important;
+    float: right;
+  }
+  .product-thumbnail::before {
+    display: none;
+  }
+  .woocommerce-message {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 0.75rem;
+  }
+  .woocommerce-order-overview {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .woocommerce-order-overview li {
+    border-bottom: 2px solid var(--cz-04);
+  }
+
+  .woocommerce-MyAccount-content {
+    padding: 0 2.25rem;
+  }
+  .woocommerce-order {
+    padding: 0 2.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .woocommerce-page table.shop_table_responsive tr {
+    padding: 1rem;
+  }
+  .woocommerce-page table.shop_table_responsive tr:nth-child(even) {
+    background-color: var(--cz-02);
+  }
+  .woocommerce table.shop_table_responsive tr:nth-child(2n) td,
+  .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .woocommerce-order-details .order_details {
+    flex-direction: column;
+  }
+  td.product-quantity .quantity {
+    margin-left: 1rem !important;
+  }
+  .wc-correios-tracking__table tfoot tr td::before {
+    display: none;
+  }
+  .wc-correios-tracking__table tfoot tr td {
+    text-align: left !important;
+  }
+  .wc-correios-tracking__table tbody tr td:first-child::before {
+    content: "Última Atualização:";
+    font-family: Niramit, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+  }
+  .wc-correios-tracking__table tbody tr td:last-child::before {
+    content: "Status da Encomenda:";
+    font-family: Niramit, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+  }
+  .addresses {
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .woocommerce-MyAccount-navigation ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 1rem;
+  }
+  .woocommerce-MyAccount-content p {
+    max-width: 45ch;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 420px) {
+  .woocommerce-order-overview {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

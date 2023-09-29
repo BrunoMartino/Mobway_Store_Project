@@ -1,0 +1,52 @@
+.addresses {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7.5rem;
+}
+.addresses h3 {
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  margin-bottom: 1rem;
+}
+.addresses address {
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  border: 2px solid var(--cz-04);
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.addresses .edit {
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  background-color: var(--az-01);
+  color: var(--az-05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.woocommerce-address-fields p .button {
+  margin: 1.5rem 0;
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  background-color: var(--rs-01);
+  color: var(--rs-05);
+}

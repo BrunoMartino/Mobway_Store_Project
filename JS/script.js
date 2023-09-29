@@ -6,6 +6,7 @@ import Cat_Swachtes from "./modules/category-swatches.js";
 import Img_Swachtes from "./modules/image-swatches.js";
 import IncrementQty from "./modules/increment-qty.js";
 import ChangeGallery from "./modules/change-main-gallery.js";
+import ChangeColor from "./modules/change-color.js";
 
 const menuBtnMobile = document.querySelector(".header__cat-btn");
 menuBtnMobile.addEventListener("click", (event) => {
@@ -106,4 +107,9 @@ if (relatedProducts) {
     '.products__related .product__list [data-product="item"]'
   );
   relatedCarousel.init();
+}
+const statusExist = document.querySelector(".order-status");
+if (statusExist) {
+  const colorChange = new ChangeColor(".order-status");
+  colorChange.init();
 }

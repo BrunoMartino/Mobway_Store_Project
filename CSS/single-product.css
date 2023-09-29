@@ -227,15 +227,15 @@ input[type="number"]::-webkit-inner-spin-button {
     no-repeat;
   margin-left: 1rem;
 }
-.shipping,
-.credit {
+.btn-flexbox .shipping,
+.btn-flexbox .credit {
   display: flex;
   align-items: center;
   justify-content: start;
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
-.shipping::before {
+.btn-flexbox .shipping::before {
   content: "";
   display: block;
   width: 2rem;
@@ -244,7 +244,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-right: 0.25rem;
   margin-left: 0.125rem;
 }
-.credit::before {
+.btn-flexbox .credit::before {
   content: "";
   display: block;
   width: 2rem;

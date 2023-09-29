@@ -28,3 +28,7 @@ Template name: Mobway
 
 /*product page*/
 @import "./CSS/single-product.css";
+
+/*reset woocommerce styles*/
+
+@import url("./CSS/woocommerce.css");

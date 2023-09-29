@@ -1,0 +1,72 @@
+.wc-correios-tracking__table {
+  position: relative;
+}
+.wc-correios-tracking-list li {
+  margin-bottom: 2rem;
+}
+.wc-correios-tracking-list li a {
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  color: var(--rx-05);
+  background-color: var(--rx-01);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.woocommerce-order-details::after {
+  content: "ATENÇÃO: Clique no código de rastreio para ser redirecionado à página de rastreamento dos Correios ou Transportadora Contratada";
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  letter-spacing: 0.02rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.wc-correios-tracking__description {
+  max-width: 90ch !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.wc-correios-tracking__description strong {
+  font-size: 1.125rem;
+  background-color: var(--rs-01);
+  color: var(--rs-05);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.wc-correios-tracking__table thead tr th:nth-child(2),
+.wc-correios-tracking__table tbody tr td:nth-child(2) {
+  display: none;
+}
+input.wc-correios-tracking__button.button {
+  background-color: #d0ffa1;
+  color: #0a1201;
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+}
+input.wc-correios-tracking__button.button:hover {
+  background-color: #a3de67;
+  color: #0a1201;
+}
+.wc-correios-tracking__description {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.copy-button {
+  max-width: 1.5rem;
+  height: 100%;
+  cursor: pointer;
+}

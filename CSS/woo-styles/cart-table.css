@@ -1,0 +1,102 @@
+.shop_table {
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+}
+.cart_item .product-thumbnail {
+  display: block !important;
+  float: right;
+}
+
+td.product-quantity .quantity {
+  margin-left: 1.5rem;
+}
+.actions button {
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 0.75rem !important;
+  line-height: 1.25rem !important;
+  background-color: var(--cz-08) !important;
+  color: var(--cz-02) !important;
+}
+
+.coupon {
+  display: flex !important;
+  align-items: center;
+}
+.coupon .input-text {
+  width: 12.5rem !important;
+  margin-right: 1rem !important;
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+}
+.coupon button {
+  max-width: 25ch;
+  background: var(--az-01) !important;
+  color: var(--az-05) !important;
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+  line-height: 1.25rem !important;
+}
+
+.cart_totals h2 {
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1rem;
+}
+
+.checkout-button {
+  background: var(--rx-01) !important;
+  color: var(--rx-05) !important;
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  line-height: 1.5rem !important;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+}
+a.shipping-calculator-button,
+.woocommerce-shipping-destination strong {
+  color: var(--az-03) !important;
+}
+a.shipping-calculator-button::before {
+  display: inline-block;
+  content: "";
+  background: url("./img-meufoot/icones/diagonal-arrow.svg") center center
+    no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+a.shipping-calculator-button::after {
+  display: none !important;
+}
+.woocommerce-shipping-calculator button {
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+  line-height: 1.25rem !important;
+}
+.variation-Image {
+  display: none !important;
+}

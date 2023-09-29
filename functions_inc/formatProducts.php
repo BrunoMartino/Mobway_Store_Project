@@ -42,7 +42,7 @@ function mobway_product_list($products) {
     <div class='product__list-img'>
       <img src="<?= $product['img'] ?>" alt="<?= $product['name'] ?>" loading="lazy" width="260" height="300">
     </div>
-      <h2 class='font-1-m'><?= $product['name'] ?></h2>
+      <h2 class='font-1-up-s'><?= $product['name'] ?></h2>
     <div class="product__list-info">
       <div>
       <p class=' font-1-xs reg-price'>R$ <?= $product['regular-price'] ?></p>

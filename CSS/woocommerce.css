@@ -1,0 +1,50 @@
+/* notices styles*/
+@import url("./woo-styles/notices.css");
+/*cart table styles*/
+@import url("./woo-styles/cart-table.css");
+/* billing page styles */
+@import url("./woo-styles/billing-page.css");
+/*order success styles*/
+@import url("./woo-styles/order-success.css");
+
+/* login and sign in style*/
+@import url("./woo-styles/login.css");
+
+/*custom user menu buttons*/
+@import url("./woo-styles/user-menu-btn.css");
+/*custom user menu orders table*/
+@import url("./woo-styles/user-order-table.css");
+/*custom user menu order detail*/
+@import url("./woo-styles/user-order-details.css");
+/*custom user menu track code*/
+@import url("./woo-styles/user-order-track.css");
+
+/*custom user menu users saved address*/
+@import url("./woo-styles/user-menu-address.css");
+
+/* mobile changes in style*/
+@import url("./woo-styles/changes-for-mobile.css");
+
+/*custom user menu destination address*/
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2 {
+  float: none;
+}
+
+/*custom user menu Edit Account User-data*/
+
+.woocommerce-EditAccountForm fieldset {
+  margin-top: 4rem;
+}
+.woocommerce-EditAccountForm p .button {
+  margin: 1.5rem 0;
+  font-family: Niramit, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  background-color: var(--rs-01);
+  color: var(--rs-05);
+}

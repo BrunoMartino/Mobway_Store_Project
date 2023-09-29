@@ -14,6 +14,7 @@
   display: none;
   width: 0;
 }
+
 /* controls product-box on home page and search, category and store page */
 
 .product__nav {
@@ -101,9 +102,10 @@
 }
 
 .product__list-item h2 {
-  margin: 0.5rem auto;
-  max-width: 15ch;
+  padding: 0.5rem;
+  max-width: 24ch;
   text-transform: capitalize;
+  font-weight: 700;
 }
 .product__list-info {
   display: flex;
