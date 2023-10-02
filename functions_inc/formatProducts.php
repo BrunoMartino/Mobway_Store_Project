@@ -27,8 +27,8 @@ return $products_final;
 
 function mobway_product_list($products) {
   $icon_url = get_template_directory_uri() . '/mobway-imgs/icons'; ?>
-    <button data-product='control' class='prev-btn'><img src="<?= $icon_url . '/arrow-left.svg';?>" alt="prev"></button>
-    <button data-product='control' class='next-btn'><img src="<?= $icon_url . '/arrow-right.svg';?>" alt="next"></button>
+    <button data-product='control' class='prev-btn'><img src="<?= $icon_url . '/arrow-left.svg';?>" alt="prev" width='48' heigth='48'></button>
+    <button data-product='control' class='next-btn'><img src="<?= $icon_url . '/arrow-right.svg';?>" alt="next" width='48' heigth='48'></button>
   <nav class='product__nav'>
   <ul class='product__list'>
 <?php foreach($products as $product) { ?>

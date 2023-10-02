@@ -1,0 +1,36 @@
+/*
+Template name: Mobway
+*/
+
+/*global archives*/
+
+@import "./CSS/global.css";
+@import "./CSS/typography.css";
+@import "./CSS/colors.css";
+@import "./CSS/components.css";
+
+/*header*/
+@import "./CSS/header.css";
+
+/*menu-mobile*/
+@import "./CSS/menu-mobile.css";
+
+/*footer*/
+@import "./CSS/footer.css";
+
+/*Home*/
+@import "./CSS/slide-home.css";
+@import "./CSS/parent-cat.css";
+@import "./CSS/page-home.css";
+
+/*categories page*/
+@import "./CSS/product-archive.css";
+
+/*product page*/
+@import "./CSS/single-product.css";
+
+/*reset woocommerce styles*/
+@import "./CSS/woocommerce.css";
+
+/*Term and conditions pages*/
+@import "./CSS/intern-pages.css";

@@ -21,7 +21,7 @@ $cart_count = WC()->cart->get_cart_contents_count();
 <p class="font-1-s rx-06"> Use o Cupom <span class="font-1-up-s rx-06">Primeira10</span> para ter 10%OFF na primeira compra</p> 
 </div>
 <section class='container header__bg'>
-  <div class='header__logo'><a href="/"><img src="<?= $img_url . '/mobway_logo.jpg'?>" alt="logo"></a></div>
+  <div class='header__logo'><a href="/"><img src="<?= $img_url . '/mobway_logo.jpg'?>" alt="logo" width='320' heigth='160'></a></div>
   <nav class='header__interface'>
   <div data-menu='list'>
   <a class='font-1-up-s rx-06 header__cat-btn'href="/loja">
@@ -43,13 +43,13 @@ $cart_count = WC()->cart->get_cart_contents_count();
     <button type='submit' id='searchbutton' value='Buscar'>Buscar</button>
     </form>
   </div>
-  <a href="/carrinho" class='header__cart'><img src="<?= $icon_url . '/cart.svg'?>" alt="carrinho">
+  <a href="/carrinho" class='header__cart'><img src="<?= $icon_url . '/cart.svg'?>" alt="carrinho" width='32' heigth='32'>
     <?php if($cart_count) { ?>
     <span class='header__cart-count'><?= $cart_count; ?></span>
     <?php }; ?>
   </a>
-  <a href="/login/" class='header__login'>
-  <img src="<?= $icon_url . '/login.svg'?>" alt="">
+  <a href="/login" class='header__login'>
+  <img src="<?= $icon_url . '/login.svg'?>" alt="login" width='32' heigth='32'>
   <p class='font-1-up-s cz-12'>Sua Conta</p>
   </a>     
 

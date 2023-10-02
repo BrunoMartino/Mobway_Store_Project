@@ -159,7 +159,7 @@
   display: block;
   width: 1rem;
   height: 1rem;
-  background: url("../mobway-imgs/icons/safe.svg") center center no-repeat;
+  background: url("./mobway-imgs/icons/safe.svg") center center no-repeat;
   margin-right: 0.5rem;
 }
 .product__list-free-ship::before {
@@ -167,7 +167,7 @@
   display: block;
   width: 1.5rem;
   height: 1rem;
-  background: url("../mobway-imgs/icons/shipping.svg") center center no-repeat;
+  background: url("./mobway-imgs/icons/shipping.svg") center center no-repeat;
   margin-right: 0.5rem;
 }
 .product__list-credit::before {
@@ -175,7 +175,7 @@
   display: block;
   width: 1.25rem;
   height: 1rem;
-  background: url("../mobway-imgs/icons/card.svg") center center no-repeat;
+  background: url("./mobway-imgs/icons/card.svg") center center no-repeat;
   margin-right: 0.5rem;
 }
 @keyframes showUp {

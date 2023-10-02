@@ -52,7 +52,7 @@ if(have_posts()){while(have_posts()){the_post();?>
     <?php foreach($data['categories'] as $category) { ?>
       <li class='parent-categories__item'>
         <a href="<?= $category['link'] ?>">
-          <img src="<?= $category['img'] ?>" alt="<?= $category['name'] ?>">
+          <img src="<?= $category['img'] ?>" alt="" width='96' heigth='96'>
           <p class='font-1-up-m'><?= $category['name'] ?></p>
       </a>
     </li>

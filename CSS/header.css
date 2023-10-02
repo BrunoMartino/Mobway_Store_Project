@@ -71,7 +71,7 @@ header {
   height: 3rem;
   justify-self: end;
   text-indent: -10000px;
-  background: url("../mobway-imgs/icons/search.svg") center center no-repeat;
+  background: url("./mobway-imgs/icons/search.svg") center center no-repeat;
   cursor: pointer;
   background-position: -1;
   border: none;

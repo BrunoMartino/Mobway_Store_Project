@@ -23,8 +23,7 @@
   content: "";
   width: 2rem;
   height: 2rem;
-  background: url("../mobway-imgs/icons/filter-left.svg") center center
-    no-repeat;
+  background: url("./mobway-imgs/icons/filter-left.svg") center center no-repeat;
   margin-left: 0.5rem;
   padding-top: 0.5rem;
 }

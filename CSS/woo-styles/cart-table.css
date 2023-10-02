@@ -10,6 +10,10 @@
   display: block !important;
   float: right;
 }
+td.product-thumbnail {
+  width: 3.125rem;
+  height: 3.125rem;
+}
 
 td.product-quantity .quantity {
   margin-left: 1.5rem;
@@ -74,18 +78,16 @@ td.product-quantity .quantity {
   letter-spacing: 0.02rem;
   text-transform: uppercase;
 }
-a.shipping-calculator-button,
+
 .woocommerce-shipping-destination strong {
   color: var(--az-03) !important;
 }
-a.shipping-calculator-button::before {
-  display: inline-block;
-  content: "";
-  background: url("./img-meufoot/icones/diagonal-arrow.svg") center center
-    no-repeat;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-right: 0.5rem;
+.shipping-calculator-button {
+  color: var(--az-05);
+  background-color: var(--az-01);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 }
 a.shipping-calculator-button::after {
   display: none !important;

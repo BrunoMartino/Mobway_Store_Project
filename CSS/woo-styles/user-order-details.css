@@ -84,6 +84,7 @@ table.order_details tbody td,
 }
 .product-name img {
   max-width: 3.125rem;
+  max-height: 3.125rem;
 }
 td.product-total {
   display: none !important;

@@ -23,7 +23,7 @@
   display: block;
   width: 1.5rem;
   height: 1.5rem;
-  background: url("../mobway-imgs/icons/heart-fill.svg") center center no-repeat;
+  background: url("./mobway-imgs/icons/heart-fill.svg") center center no-repeat;
 }
 .woocommerce-message .button {
   font-family: Niramit, Arial, sans-serif !important;

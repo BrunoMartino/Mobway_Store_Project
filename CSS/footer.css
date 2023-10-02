@@ -89,7 +89,7 @@ footer h3:before {
 .email a:before {
   content: "";
   display: block;
-  background: url("../mobway-imgs/icons/e-mail.svg") center center no-repeat;
+  background: url("./mobway-imgs/icons/e-mail.svg") center center no-repeat;
   width: 1.5rem;
   height: 1.25rem;
   margin-right: 0.5rem;
@@ -97,7 +97,7 @@ footer h3:before {
 .wpp a:before {
   content: "";
   display: block;
-  background: url("../mobway-imgs/icons/whatsapp.svg") center center no-repeat;
+  background: url("./mobway-imgs/icons/whatsapp.svg") center center no-repeat;
   width: 1.5rem;
   height: 1.85rem;
   margin-right: 0.5rem;
