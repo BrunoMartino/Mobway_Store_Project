@@ -33,7 +33,8 @@ if (cronoExist) {
   );
   timer.init();
   const cronoProduct = new InfiniteCarousel(
-    '.crono-gallery [data-product="control"]',
+    ".crono-gallery .prev-btn",
+    ".crono-gallery .next-btn",
     '.crono-gallery .product__list [data-product="item"]'
   );
   cronoProduct.init();
@@ -41,7 +42,8 @@ if (cronoExist) {
 const productNewest = document.querySelector(".newest-gallery");
 if (productNewest) {
   const newestProduct = new InfiniteCarousel(
-    '.newest-gallery [data-product="control"]',
+    ".newest-gallery .prev-btn",
+    ".newest-gallery .next-btn",
     '.newest-gallery .product__list [data-product="item"]'
   );
   newestProduct.init();
@@ -49,7 +51,8 @@ if (productNewest) {
 const productMostSales = document.querySelector(".most-sales-gallery");
 if (productMostSales) {
   const mostSalesProduct = new InfiniteCarousel(
-    '.most-sales-gallery [data-product="control"]',
+    ".most-sales-gallery .prev-btn",
+    ".most-sales-gallery .next-btn",
     '.most-sales-gallery .product__list [data-product="item"]'
   );
   mostSalesProduct.init();
@@ -95,7 +98,8 @@ if (gallery) {
 const singleProductGallery = document.querySelector(".product__gallery-list");
 if (singleProductGallery) {
   const singleGallerySlide = new InfiniteCarousel(
-    '.product__gallery-list [data-product="control"]',
+    ".product__gallery-list .prev-btn",
+    ".product__gallery-list .next-btn",
     ".product__gallery-slide .product__gallery-img"
   );
   singleGallerySlide.init();

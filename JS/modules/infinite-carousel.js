@@ -1,13 +1,15 @@
 export default class InfiniteCarousel {
-  constructor(controls, slides) {
-    this.controls = document.querySelectorAll(controls);
+  constructor(prevBtn, nextBtn, slides) {
+    this.prevBtn = document.querySelector(prevBtn);
+    this.nextBtn = document.querySelector(nextBtn);
     this.slides = Array.from(document.querySelectorAll(slides));
 
     this.currentItem = 0;
     this.maxItems = this.slides.length;
     this.screenWidth = window.innerWidth;
 
-    this.moveSlide = this.moveSlide.bind(this);
+    this.moveSlideLeft = this.moveSlideLeft.bind(this);
+    this.moveSlideRight = this.moveSlideRight.bind(this);
   }
 
   callNextSlide() {
@@ -23,28 +25,29 @@ export default class InfiniteCarousel {
   }
 
   createEvents() {
-    this.controls.forEach((control) => {
-      control.addEventListener("click", this.moveSlide);
-    });
+    this.prevBtn.addEventListener("click", this.moveSlideLeft);
+    this.nextBtn.addEventListener("click", this.moveSlideRight);
+
     this.slides[0].classList.add("selected");
   }
 
-  moveSlide(e) {
-    const isPrev = e.target.classList.contains("prev-btn");
-
-    if (isPrev) {
-      this.currentItem--;
-    } else {
-      this.currentItem++;
-    }
-    if (this.currentItem >= this.maxItems) {
-      this.currentItem = 0;
-    }
+  moveSlideLeft() {
+    this.currentItem--;
     if (this.currentItem < 0) {
       this.currentItem = this.maxItems - 1;
     }
     this.callNextSlide();
+    console.log("voltou");
   }
+  moveSlideRight() {
+    this.currentItem++;
+    if (this.currentItem >= this.maxItems) {
+      this.currentItem = 0;
+    }
+    this.callNextSlide();
+    console.log("avançou");
+  }
+
   init() {
     this.createEvents();
   }
