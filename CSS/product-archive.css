@@ -269,6 +269,17 @@
     gap: 0;
   }
 }
+.not-finded {
+  font-family: Niramit, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.03;
+  text-transform: uppercase;
+  padding: 3rem;
+  text-align: center;
+}
 @media (max-width: 530px) {
   .filters.active {
     top: 18.5rem;

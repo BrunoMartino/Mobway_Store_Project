@@ -135,6 +135,19 @@ footer h3:before {
     gap: 0.75rem;
   }
 }
+@media (max-width: 590px) {
+  .footer__content-cat h3,
+  .footer__content-contact h3,
+  .footer__content-intern-pages h3 {
+    font-size: 1.25rem;
+  }
+  .footer__cat-grid li a,
+  .footer__pages-list li a,
+  .email a,
+  .wpp a {
+    font-size: 0.85rem;
+  }
+}
 @media (max-width: 400px) {
   .footer__content-cat,
   .footer__content-contact,
