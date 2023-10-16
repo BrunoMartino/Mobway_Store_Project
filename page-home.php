@@ -1,7 +1,6 @@
 <?php 
 //Template Name: Home
 get_header() ?>
-
 <?php 
 $home_id = get_the_ID();
 $categoria_1 = get_post_meta($home_id, 'categoria_1', true);
@@ -10,7 +9,6 @@ $categoria_3 = get_post_meta($home_id, 'categoria_3', true);
 $categoria_4 = get_post_meta($home_id, 'categoria_4', true);
 $categoria_5 = get_post_meta($home_id, 'categoria_5', true);
 $categoria_6 = get_post_meta($home_id, 'categoria_6', true);
-
 $products_chrono = wc_get_products( [
   'limit' => 4, 
   'tag' => ['crono'],
@@ -25,22 +23,17 @@ $product_most_sales = wc_get_products([
   'orderby' => 'meta_value_num',
   'order' => 'DESC'
 ]);
-
 $data=[];
-
 $data['categories'][$categoria_1] = get_is_product_category_data($categoria_1);
 $data['categories'][$categoria_2] = get_is_product_category_data($categoria_2);
 $data['categories'][$categoria_3] = get_is_product_category_data($categoria_3);
 $data['categories'][$categoria_4] = get_is_product_category_data($categoria_4);
 $data['categories'][$categoria_5] = get_is_product_category_data($categoria_5);
 $data['categories'][$categoria_6] = get_is_product_category_data($categoria_6);
-
 $data['cronometer'] = format_products($products_chrono, 'product-box');
 $data['newest'] = format_products($product_new_inputs,'product-box');
 $data['most_sales'] = format_products($product_most_sales,'product-box')
 ?>
-
-
 <?php 
 if(have_posts()){while(have_posts()){the_post();?>
 <section class='slide-gallery' data-home='slide'>
@@ -74,6 +67,5 @@ if(have_posts()){while(have_posts()){the_post();?>
 <h1 class='font-2-up-l rx-06'>Mais Vendidos</h1>
 <div class='container'><?php mobway_product_list($data['most_sales']) ?></div>
 </section>
-
 <?php } } ?>
 <?php get_footer(); ?>

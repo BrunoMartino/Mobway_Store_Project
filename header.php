@@ -15,7 +15,6 @@ $img_url = get_template_directory_uri() . '/mobway-imgs/logo';
 $icon_url = get_template_directory_uri() . '/mobway-imgs/icons';
 $cart_count = WC()->cart->get_cart_contents_count();
 ?>
-
 <header>
 <div class="header__discount-strip"> 
 <p class="font-1-s rx-06"> Use o Cupom <span class="font-1-up-s rx-06">Primeira10</span> para ter 10%OFF na primeira compra</p> 
@@ -52,8 +51,6 @@ $cart_count = WC()->cart->get_cart_contents_count();
   <img src="<?= $icon_url . '/login.svg'?>" alt="login" width='32' heigth='32'>
   <p class='font-1-up-s cz-12'>Sua Conta</p>
   </a>     
-
-
   </nav>
 </section>
 </header>

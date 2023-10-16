@@ -1,6 +1,5 @@
 <?php 
 // format and deploy Html and CSS class for products on home and category pages.
-
 function format_products($products, $img_size = 'medium') {
 $products_final = [];
   foreach ($products as $product) {
@@ -22,11 +21,10 @@ $products_final = [];
 return $products_final;
 }
 ?>
-
-<?php 
-
+<?php
 function mobway_product_list($products) {
-  $icon_url = get_template_directory_uri() . '/mobway-imgs/icons'; ?>
+  $icon_url = get_template_directory_uri() . '/mobway-imgs/icons'; 
+?>
     <button data-product='control' class='prev-btn'><img src="<?= $icon_url . '/arrow-left.svg';?>" alt="prev" width='48' heigth='48'></button>
     <button data-product='control' class='next-btn'><img src="<?= $icon_url . '/arrow-right.svg';?>" alt="next" width='48' heigth='48'></button>
   <nav class='product__nav'>

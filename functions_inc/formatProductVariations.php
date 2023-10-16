@@ -1,4 +1,3 @@
-
 <?php 
 function mobway_get_product_variation($id) {
   $product = wc_get_product($id );
@@ -42,5 +41,4 @@ function mobway_get_product_variation($id) {
     }
   }
 }
-
 ?>

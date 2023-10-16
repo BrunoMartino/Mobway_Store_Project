@@ -11,7 +11,7 @@ function remove_unwanted_styles() {
     wp_dequeue_style('woocommerce-layout');
 
     // Dequeue jQuery
-   // wp_dequeue_script('jquery');
+    wp_dequeue_script('jquery');
 
     // Dequeue jQuery Migrate
     wp_dequeue_script('jquery-migrate');

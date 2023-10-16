@@ -13,7 +13,7 @@
     <nav class='footer__content-contact'>
       <h3 class='font-1-up-m rx-06'>Contatos:</h3>
       <ul>
-        <li class='email'><a class="font-1-s rx-06" href="mailto:atendimento@mobwaystore.com.br">atendimento@mobway.com.br</a></li>
+        <li class='email'><a class="font-1-s rx-06" href="mailto:atendimento@mobwaystore.com">atendimento@mobway.com.br</a></li>
         <li class='wpp'><a class="font-1-s rx-06" href="https://wa.me/5531991204061">(31) 99120-4061</a></li>
       </ul>
     </nav>

@@ -5,7 +5,7 @@ function add_async_defer_to_plugin_assets($tag, $handle, $src) {
   if(strpos ($src, '/wp-content/plugins/') !== false || strpos ($src, "/wp-includes/") !== false) {
     // Verify resource is a script
     if(wp_script_is($handle, 'registered')) {
-      $tag = str_replace('<script', '<script defer loading="lazy"', $tag);
+      $tag = str_replace('<script', '<script loading="lazy"', $tag); // do no use defer or async on scripts
     }
     /*
     // verify resource is a style
